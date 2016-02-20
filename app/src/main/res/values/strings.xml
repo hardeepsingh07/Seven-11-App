@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Seven - 11</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="black">#000000</color>
+
+    <string name="title_activity_create_project">CreateProject</string>
+    <string name="title_activity_lotteries">Lotteries</string>
+    <string name="title_activity_lotto_report">LottoReport</string>
+    <string name="title_activity_invoices">Invoices</string>
+    <string name="title_activity_front_change">FrontChange</string>
+    <string name="title_activity_back_change">BackChange</string>
+    <string name="title_activity_cash">Cash</string>
+    <string name="title_activity_results">Results</string>
+    <string name="title_activity_show_invoices">ShowInvoices</string>
+    <string name="title_activity_display_invoices">displayInvoices</string>
+
+</resources>

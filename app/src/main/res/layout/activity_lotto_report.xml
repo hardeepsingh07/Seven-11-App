@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.s11.LottoReport" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:src="@drawable/seveneleven" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/seveneleven" />
+
+    <TextView
+        android:id="@+id/tLottoSold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewName"
+        android:layout_marginTop="47dp"
+        android:gravity="center"
+        android:text="Lotto Sale"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:layout_toLeftOf="@+id/eLottoSale"
+        android:layout_toStartOf="@+id/eLottoSale" />
+
+    <TextView
+        android:id="@+id/tLottoWin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tLottoSold"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="Lotto Win"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:layout_alignRight="@+id/tLottoSold"
+        android:layout_alignEnd="@+id/tLottoSold" />
+
+    <TextView
+        android:id="@+id/tScratcherSold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tLottoWin"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="Scratcher Sale"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:layout_alignRight="@+id/tLottoWin"
+        android:layout_alignEnd="@+id/tLottoWin" />
+
+    <TextView
+        android:id="@+id/tScratcherWin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tScratcherSold"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Scratcher Win"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:layout_alignRight="@+id/tScratcherSold"
+        android:layout_alignEnd="@+id/tScratcherSold" />
+
+    <EditText
+        android:id="@+id/eLottoSale"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tLottoSold"
+        android:layout_alignBottom="@+id/tLottoSold"
+        android:layout_alignRight="@+id/imageView2"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="$"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textStyle="normal"
+        android:typeface="serif" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/eLottoWin"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tLottoWin"
+        android:layout_alignBottom="@+id/tLottoWin"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="$"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textStyle="normal"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/eScratcherSale"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tScratcherSold"
+        android:layout_alignBottom="@+id/tScratcherSold"
+        android:layout_alignRight="@+id/eLottoWin"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="$"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:layout_alignLeft="@+id/eLottoWin"
+        android:layout_alignStart="@+id/eLottoWin" />
+
+    <EditText
+        android:id="@+id/eScratcherWin"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tScratcherWin"
+        android:layout_alignBottom="@+id/tScratcherWin"
+        android:layout_alignRight="@+id/eScratcherSale"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="$"
+        android:inputType="number"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:layout_alignLeft="@+id/eScratcherSale"
+        android:layout_alignStart="@+id/eScratcherSale" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Lottery Reports"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/lrButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eScratcherWin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:background="@color/black"
+        android:text="Finish"
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+</RelativeLayout>

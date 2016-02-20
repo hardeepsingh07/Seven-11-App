@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.singh.seven_11" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CreateProject"
+            android:label="@string/title_activity_create_project" >
+        </activity>
+        <activity
+            android:name=".Lotteries"
+            android:label="@string/title_activity_lotteries" >
+        </activity>
+        <activity
+            android:name=".LottoReport"
+            android:label="@string/title_activity_lotto_report" >
+        </activity>
+        <activity
+            android:name=".Invoices"
+            android:label="@string/title_activity_invoices" >
+        </activity>
+        <activity
+            android:name=".FrontChange"
+            android:label="@string/title_activity_front_change" >
+        </activity>
+        <activity
+            android:name=".BackChange"
+            android:label="@string/title_activity_back_change" >
+        </activity>
+        <activity
+            android:name=".Cash"
+            android:label="@string/title_activity_cash" >
+        </activity>
+        <activity
+            android:name=".Results"
+            android:label="@string/title_activity_results" >
+        </activity>
+        <activity
+            android:name=".displayInvoices"
+            android:label="@string/title_activity_display_invoices" >
+        </activity>
+    </application>
+
+</manifest>

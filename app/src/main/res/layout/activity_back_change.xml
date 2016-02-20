@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/black"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.singh.seven_11.BackChange">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:src="@drawable/seveneleven"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:src="@drawable/seveneleven"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back Change"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Subtotal"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:layout_toLeftOf="@+id/et2Subttotal"
+        android:layout_toStartOf="@+id/et2Subttotal" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Required in Store"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Back Change"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/textView15"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_toLeftOf="@+id/etBackChange"
+        android:layout_toStartOf="@+id/etBackChange" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Total Account"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/textView17"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_toLeftOf="@+id/etRequiredChange"
+        android:layout_toStartOf="@+id/etRequiredChange" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/et2Subttotal"
+        android:hint="#"
+        android:imeOptions="actionNext"
+        android:editable="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:layout_above="@+id/etBackChange"
+        android:layout_toRightOf="@+id/textView18"
+        android:layout_toEndOf="@+id/textView18" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/etBackChange"
+        android:hint="#"
+        android:imeOptions="actionDone"
+        android:editable="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:layout_above="@+id/etRequiredChange"
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/etRequiredChange"
+        android:hint="#"
+        android:imeOptions="actionNext"
+        android:editable="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_toRightOf="@+id/textView17"
+        android:layout_toEndOf="@+id/textView17" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/eTTotalAccount"
+        android:hint="#"
+        android:imeOptions="actionNext"
+        android:editable="false"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:layout_below="@+id/etRequiredChange"
+        android:layout_toEndOf="@+id/textView17"
+        android:layout_toRightOf="@+id/textView17"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <Button
+        android:id="@+id/bcFinish"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@color/black"
+        android:text="Finish"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:gravity="center"
+        android:layout_below="@+id/textView18"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+</RelativeLayout>
